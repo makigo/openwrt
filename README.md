@@ -1,7 +1,7 @@
 # OpenWRT
 ## Scripts
 
-### Profile hint
+### /etc/profile
     # hint
     ┌──────────────────────────────────────────┐
     │           QUICK USER COMMANDS            │
