@@ -1,4 +1,4 @@
-# openwrt
+# OpenWRT
 ## Profile hint
     # hint
     ┌──────────────────────────────────────────┐
