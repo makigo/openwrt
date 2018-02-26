@@ -1,7 +1,5 @@
 # openwrt
-## OpenWRT Scripts
-
-### Profile hint
+## Profile hint
     # hint
     ┌──────────────────────────────────────────┐
     │           QUICK USER COMMANDS            │
