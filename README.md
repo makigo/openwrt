@@ -1,5 +1,5 @@
-# openwrt
-## OpenWRT Scripts
+# OpenWRT
+## Scripts
 
 ### Profile hint
     # hint
