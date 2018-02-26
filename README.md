@@ -1,23 +1,23 @@
 # openwrt
 OpenWRT Scripts
 
-Profile hint
-┌──────────────────────────────────────────┐
-│           QUICK USER COMMANDS            │
-│        c - Clear the terminal            │
-│        d - Disk free in human terms      │
-│        f - RAM free in kb                │
-│        l - List directory                │
-│        p - Reload Profile file           │
-│        t — original uptime system        │
-│        u - To the directory above        │
-│        q — Exit from the shell           │
-│       lg - Show all log                  │
-│       pi - ping hosts by numbers         │
-│       sl - Show log with filter          │
-│       up — Custom uptime system          │
-│      lan - Read/ -w Write network conf   │
-│     wlan - Read/ -w Write wireless conf  │
+### Profile hint
+    ┌──────────────────────────────────────────┐
+    │           QUICK USER COMMANDS            │
+    │        c - Clear the terminal            │
+    │        d - Disk free in human terms      │
+    │        f - RAM free in kb                │
+    │        l - List directory                │
+    │        p - Reload Profile file           │
+    │        t — original uptime system        │
+    │        u - To the directory above        │
+    │        q — Exit from the shell           │
+    │       lg - Show all log                  │
+    │       pi - ping hosts by numbers         │
+    │       sl - Show log with filter          │
+    │       up — Custom uptime system          │
+    │      lan - Read/ -w Write network conf   │
+    │     wlan - Read/ -w Write wireless conf  │
 ├──────────────────────────────────────────┤
 │              NAVIGATION                  │
 │     root - Go to directory /             │
