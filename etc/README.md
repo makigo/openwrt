@@ -20,7 +20,7 @@
     ├──────────────────────────────────────────┤
     │              NAVIGATION                  │
     │     root - Go to directory /             │
-    │     home - Go to directory /home         │
+    │     home - Go to directory /root         │
     │     conf - Go to directory ../config     │
     │      etc - Go to directory /etc          │
     │     init - Go to directory ../init.d     │
