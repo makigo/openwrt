@@ -85,7 +85,6 @@ alias u='cd ..'
 
 # Alter the ls command
 alias l='ls -lAh'
-alias ls='ls -lac'
 
 # Command in functions
 up() {
@@ -153,9 +152,9 @@ dbind() { /etc/init.d/named disable; echo "service named disabled"; }
 ubind() { /etc/init.d/named start; printf "service named start\n please wait...\r"; sleep 3; logread -l 16 -e named ; }
 rbind() { /etc/init.d/named restart; printf "service named restart\n please wait...\r"; sleep 3; logread -l 16 -e named ; }
 sbind() { /etc/init.d/named stop; printf "service named stop\n please wait...\r"; sleep 3; logread -l 16 -e named ; }
-bind() { cd /etc/bind; ls -lanF; }
-master() { cd /etc/bind/master; ls -lahF; }
-slave() { cd /etc/bind/slave; ls -lahF; }
+bind() { cd /etc/bind; l; }
+master() { cd /etc/bind/master; l; }
+slave() { cd /etc/bind/slave; l; }
 
 lan() { [ "$1" = "-w" ] && nano /etc/config/network || cat /etc/config/network | less; }
 wlan() { [ "$1" = "-w" ] && nano /etc/config/wireless || cat /etc/config/wireless | less; }
@@ -281,7 +280,7 @@ cat << EOF
 ├──────────────────────────────────────────┤
 │              NAVIGATION                  │
 │     root - Go to directory /             │
-│     home - Go to directory /home         │
+│     home - Go to directory /root         │
 │     conf - Go to directory ../config     │
 │      etc - Go to directory /etc          │
 │     init - Go to directory ../init.d     │
