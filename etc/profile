@@ -88,21 +88,22 @@ alias l='ls -lAh'
 
 # Command in functions
 up() {
-	# Uptime
-	nowTime=`date +"%s"`
-	let upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
-	let secs=$((${upSeconds}%60))
-	let mins=$((${upSeconds}/60%60))
-	let hours=$((${upSeconds}/3600%24))
-	let days=$((${upSeconds}/86400))
-	UPTIME=`printf "%d days, %02d:%02d:%02d" "$days" "$hours" "$mins" "$secs"`
-	#UPTIME=`printf "%d days %02d:%02d" "$days" "$hours" "$mins"`
-	let ssystem=$((${nowTime}-${upSeconds}))
-	START=`date -d @$ssystem`
+    # Uptime
+    separ="----------------------------------"
+    nowTime=`date +"%s"`
+    let upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
+    let secs=$((${upSeconds}%60))
+    let mins=$((${upSeconds}/60%60))
+    let hours=$((${upSeconds}/3600%24))
+    let days=$((${upSeconds}/86400))
+    UPTIME=`printf "%d days, %02d:%02d:%02d" "$days" "$hours" "$mins" "$secs"`
+    #UPTIME=`printf "%d days %02d:%02d" "$days" "$hours" "$mins"`
+    let ssystem=$((${nowTime}-${upSeconds}))
+    START=`date -d @$ssystem`
 
-	printf "Uptime System: %1s\n" "$UPTIME"
-	printf "-----------------------------------\n"
-	printf "Start: %1s\n" "$START"
+    printf "Uptime System: %1s\n" "$UPTIME"
+    printf "%s\n" "$separ"
+    printf "Start: %1s\n" "$START"
 }
 
 pi() { 
